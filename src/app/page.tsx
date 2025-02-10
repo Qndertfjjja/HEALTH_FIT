@@ -70,7 +70,7 @@ export default function Home() {
       exercises: [
         { name: "Push-ups", sets: 3, reps: 12 },
         { name: "Squats", sets: 3, reps: 15 },
-        { name: "Plank", duration: "60 seconds" }
+        
       ]
     },
     dietPlan: {

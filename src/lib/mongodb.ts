@@ -1,14 +1,16 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://gauriatilkar2002:T6ZNyvfOj0TvrCcP@healthfit.8zf46.mongodb.net/?retryWrites=true&w=majority&appName=healthfit';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/health_fit';
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
 }
 
+// @ts-ignore
 let cached = global.mongoose;
 
 if (!cached) {
+  // @ts-ignore
   cached = global.mongoose = { conn: null, promise: null };
 }
 

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/health_fit';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://gauriatilkar2002:T6ZNyvfOj0TvrCcP@healthfit.8zf46.mongodb.net/?retryWrites=true&w=majority&appName=healthfit';
 
 if (!mongoose.connections[0].readyState) {
   mongoose.connect(MONGODB_URI);
