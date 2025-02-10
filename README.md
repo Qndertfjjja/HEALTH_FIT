@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+HealthyHabits - Health & Fitness Application
 
-## Getting Started
+Overview
 
-First, run the development server:
+HealthyHabits is a health and fitness application designed to help users establish and maintain healthy routines. The app enables users to track key wellness metrics such as exercise, nutrition, and sleep, while offering personalized suggestions for improvement. By promoting positive habits, it aims to enhance overall well-being.
 
-```bash
+🚀 Deployed Application
+
+Features
+
+1. User Registration and Login
+
+Secure JWT authentication for user registration and login.
+
+2. Health Activity Tracking
+
+Track daily health activities such as exercise, nutrition, and sleep.
+
+Log daily activities and monitor progress.
+
+3. Goal Setting and Monitoring
+
+Set fitness goals (e.g., calories burned, hours of sleep, daily water intake).
+
+Track achievements over time.
+
+4. Nutrition API Integration
+
+Integration with third-party nutritional API (like Edamam).
+
+Provides detailed nutritional information for logged meals and diet plans.
+
+5. Fitness Challenge Service
+
+Participate in community-driven fitness challenges.
+
+Create custom challenges to motivate yourself and others.
+
+6. Habit Tracker
+
+Build custom habit-tracking plans.
+
+Track consistency over time (e.g., daily hydration, morning exercise).
+
+7. Sleep Monitoring
+
+Log sleep hours.
+
+Get sleep quality insights.
+
+Track how sleep affects overall fitness.
+
+8. Reminder Service
+
+Customizable reminders for activities like workouts, meals, water intake, and sleep routines.
+
+9. MongoDB Integration
+
+Store user profiles, health activity logs, fitness goals, and fitness challenges in a MongoDB database.
+
+10. API Testing
+
+Ensure platform reliability with tests for all APIs using Mocha or Jest.
+
+🎯 Unique Feature
+
+Challenge Participation and Leaderboard
+
+Global and personalized leaderboard for fitness challenges.
+
+Compete in challenges and earn badges.
+
+Foster a sense of achievement and community support.
+
+🔥 Challenging Feature
+
+Complex Data Visualization
+
+Visual analytics (graphs, charts, progress bars).
+
+Showcase fitness trends, nutrition analysis, sleep patterns, and overall progress.
+
+📢 Additional Features
+
+Community Support Section: Join groups to share progress, tips, and motivation.
+
+🌟 Optional Features
+
+AI-Coach: AI-driven fitness coach offering personalized workout routines and diet plans.
+
+Healthy Recipe Suggestions: Healthy recipes based on dietary preferences.
+
+Real-Time Audio Guidance: Audio guides for workouts, stretches, or meditation sessions.
+
+🛠️ Tech Stack
+
+Frontend: React, Next.js, TypeScript
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+APIs: Edamam API (for nutrition data)
+
+Authentication: JWT
+
+Deployment: Vercel
+
+📝 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/your-repo/HealthyHabits.git
+cd HealthyHabits
+
+Install dependencies:
+
+npm install
+
+Set up environment variables in .env:
+
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+EDAMAM_API_KEY=your_edamam_api_key
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Testing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run tests using Jest:
 
-## Learn More
+npm test
 
-To learn more about Next.js, take a look at the following resources:
+🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fork the repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create your feature branch:
 
-## Deploy on Vercel
+git checkout -b feature/YourFeature
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Commit your changes:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git commit -m 'Add new feature'
+
+Push to the branch:
+
+git push origin feature/YourFeature
+
+Open a Pull Request.
